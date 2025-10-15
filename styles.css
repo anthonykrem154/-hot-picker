@@ -128,3 +128,78 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
   .versus{grid-template-columns:1fr;gap:12px}
   .vs{display:none}
 }
+/* ===== MOBILE FRIENDLY STYLES ===== */
+
+/* Smaller screens adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px; /* avoid overlap with footer */
+  }
+
+  header.site-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .brand {
+    position: static;
+    transform: none;
+    justify-content: center;
+  }
+
+  nav.tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .versus {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .image-wrap {
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+  }
+
+  .pick {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .site-footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .brand h1 {
+    font-size: 18px;
+  }
+
+  .flame {
+    font-size: 20px;
+  }
+
+  .tab-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .hints span {
+    font-size: 12px;
+  }
+}
+
