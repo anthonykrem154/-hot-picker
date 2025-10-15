@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HotPicker — Who's Hotter?</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+  <meta name="theme-color" content="#111827">
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="brand">
+      <span class="flame">🔥</span>
+      <h1>HotPicker:Created By Anthony Soprano</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="play" class="tab active">
+      </div>
+
+      <div class="versus">
+        <article id="cardLeft" class="card">
+          <div class="image-wrap shimmer">
+            <img id="imgLeft" alt="" />
+          </div>
+          <h2 id="nameLeft">—</h2>
+          <button class="pick" data-side="left">Hotter</button>
+        </article>
+
+        <div class="vs">VS</div>
+
+        <article id="cardRight" class="card">
+          <div class="image-wrap shimmer">
+            <img id="imgRight" alt="" />
+          </div>
+          <h2 id="nameRight">—</h2>
+          <button class="pick" data-side="right">Hotter</button>
+        </article>
+      </div>
+
+      <div class="hints">
+        <span>Tip: Use ⬅️ / ➡️ arrows to vote</span>
+        <button id="skipBtn" class="ghost small">Skip pair</button>
+      </div>
+    </section>
+
+
+    <section id="gallery" class="tab">
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+  </main>
+
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
